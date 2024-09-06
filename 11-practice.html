@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-Practice</title>
+</head>
+<body>
+    <script>
+    /*
+    function arrayswap(array){
+
+        const lastindex = array.length -  1;
+
+        const lastvalue = array[lastindex];
+
+        const firstvalue = array[0];
+
+        array[0] = lastvalue;
+
+        array[lastindex] = firstvalue;
+
+        return array;
+
+        }
+
+    console.log( arrayswap([1, 20, 22,24, 5]));
+
+    console.log( arrayswap(['hi','hello','hey']));
+    */
+    /*
+    for ( i = 5; i >= 0 ; i -- ){
+        console.log(i);
+    }
+    */
+    /*
+    const num = [1,2,3];
+
+    const result = [];
+    
+    for(i=0;  i < num.length; i++){
+        result.push(num[i] + 1);
+    }
+    console.log(result);
+    */
+    /*
+    function addOne(array1,array2){
+        const result = [];
+        for(let i=0 ; i < array1.length; i++){
+            result.push(array1[i] + array2[i]);
+        }
+        return result;
+    }
+    console.log(addOne([1,2,3],[1,1,1]));
+    console.log(addOne([4,5,6],[1,1,1]));
+    */
+    /*
+    function countPositive(nums){
+        let result = 0;
+
+        for( let i=0; i < nums.length; i++ ){
+            if (nums[i] > 0){
+                result++;
+            }
+        }
+        return result;
+    }
+    console.log(countPositive([1,-3,5]));
+    console.log(countPositive([-2,3,-5,7,10]));
+    */
+    
+    function minMax(nums){
+        const result = {
+            Min : nums[0],
+            Max: nums[0]
+        };
+
+        for (i=0; i<nums.length; i++){
+            const value = nums[i];
+            if(value < result.min){
+                result.min = value;
+            }
+            if(value > result.max){
+                result.max = value;
+            }
+        }
+        return result;
+    }
+    console.log(minMax([]));
+    console.log(minMax([3]))
+    </script>
+</body>
+</html>

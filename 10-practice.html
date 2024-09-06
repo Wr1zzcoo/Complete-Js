@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Practice</title>
+    <style>
+        .button{
+            background-color: rgb(255, 216, 20);
+            padding: 12px 45px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+        .button1{
+            background-color: black;
+            padding: 10px 12px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+        }
+        .button2{
+            background-color: rgb(230, 230, 230);
+            padding: 12px 14px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            color: black;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Add to Cart</button>
+    <button class="button1">Request Now</button>
+    <button class="button2">Schedule for later</button>
+    <button class="js-button">Test</button>
+
+    <script>
+        const button = document.querySelector('.js-button');
+        console.log(button.classList.contains('js-button'));
+    </script>
+</body>
+</html>
